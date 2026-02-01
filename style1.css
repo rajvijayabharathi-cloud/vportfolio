@@ -1,0 +1,250 @@
+/* General Reset */
+* {
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Navigation */
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  background: #ff6600;
+  border-radius: 5px;
+}
+@media (max-width: 768px) {
+
+  /* Navbar vertical */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+  }
+
+  /* Text size adjust */
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  /* Section padding reduce */
+  .section {
+    padding: 40px 15px;
+  }
+}
+/* Hero Section */
+.hero {
+  display: flex;
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right,#ff6600,#ff9900);
+  color: #fff;
+}
+.hero-section {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right,#ff6600,#ff9900);
+  padding: 40px;
+}
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+  width: 200px; /* adjust size as needed */
+  margin-right: 30px; /* space between image and text */
+}
+
+.hero-text {
+  color: white;
+}
+
+
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.btn {
+  width: 100%;
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #333;
+  color: #fff;
+}
+.portfolio {
+  display: flex;
+  align-items: center; /* vertically align */
+}
+
+.left-photo {
+  width: 200px;   /* adjust size */
+  margin-right: 20px; /* space between photo and text */
+}
+
+
+/* About Section */
+.about {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+/* Contact Section */
+.contact {
+  padding: 40px 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin: 10px 0 5px;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  margin-top: 20px;
+  padding: 10px;
+  background: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #333;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: #fff;
+  margin-top: 40px;
+}
+/* Academics Section */
+.academics {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.academics h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.list li {
+  background: #fff;
+  margin: 10px 0;
+  padding: 15px;
+  border-left: 5px solid #ff6600;
+  border-radius: 5px;
+}
+
+/* Achievements Section */
+.achievements {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.achievements h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.achievements .list li {
+  background: #fff;
+  margin: 10px 0;
+  padding: 15px;
+  border-left: 5px solid #0099cc;
+  border-radius: 5px;
+}
